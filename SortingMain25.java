@@ -1,11 +1,11 @@
-public class SortingMain {
+public class SortingMain25 {
     public static void main(String[] args) {
         int a[] = {20, 10, 2, 7, 12};
         int b [] = {30,20, 2, 8, 14};
         int c [] = {40, 10, 4, 9, 3};
-        Sorting dataurut1 = new Sorting(a, a.length);
-        Sorting dataurut2 = new Sorting(b, b.length);
-        Sorting dataurut3 = new Sorting(c, c.length);
+        Sorting25 dataurut1 = new Sorting25(a, a.length);
+        Sorting25 dataurut2 = new Sorting25(b, b.length);
+        Sorting25 dataurut3 = new Sorting25(c, c.length);
 
         System.out.println("Data Awal:");
         dataurut1.tampil();

@@ -1,8 +1,8 @@
-public class Sorting {
+public class Sorting25 {
     int[] data;
     int jumlahData;
 
-    Sorting(int Data[], int jmlData) {
+    Sorting25(int Data[], int jmlData) {
         jumlahData = jmlData;
         data = new int[jumlahData];
         for (int i = 0; i < jumlahData; i++) {
