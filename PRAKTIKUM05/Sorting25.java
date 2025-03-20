@@ -1,4 +1,4 @@
-package Praktikum5;
+package PRAKTIKUM05;
 
 public class Sorting25 {
     int[] data;

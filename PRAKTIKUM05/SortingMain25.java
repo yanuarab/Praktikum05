@@ -1,4 +1,4 @@
-package Praktikum5;
+package PRAKTIKUM05;
 public class SortingMain25 {
     public static void main(String[] args) {
         int a[] = {20, 10, 2, 7, 12};
