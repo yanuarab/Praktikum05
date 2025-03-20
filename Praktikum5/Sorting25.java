@@ -1,3 +1,5 @@
+package Praktikum5;
+
 public class Sorting25 {
     int[] data;
     int jumlahData;
