@@ -1,20 +1,27 @@
 public class MahasiswaBerprestasi25 {
-    Mahasiswa25 [] listMhs= new Mahasiswa25 [5];
+    Mahasiswa25[] listMhs;
     int idx;
+    
+    MahasiswaBerprestasi25() {
+    }
+
+    MahasiswaBerprestasi25(int kapasitas) {
+        listMhs = new Mahasiswa25[kapasitas];
+    }
 
     void tambah(Mahasiswa25 m) {
         if (idx < listMhs.length) {
             listMhs[idx] = m;
             idx++;
         } else {
-            System.out.println("data sudah penuh");
+            System.out.println("Data sudah penuh");
         }
     }
-    
+
     void tampil() {
         for (Mahasiswa25 m : listMhs) {
             m.tampilInformasi();
-            System.out.println("------------------");
+            System.out.println("------------------------");
         }
     }
 
@@ -29,7 +36,7 @@ public class MahasiswaBerprestasi25 {
             }
         }
     }
-    
+
     void selectionSort() {
         for (int i = 0; i < listMhs.length - 1; i++) {
             int idxMin = i;
@@ -43,6 +50,7 @@ public class MahasiswaBerprestasi25 {
             listMhs[i] = tmp;
         }
     }
+
     void insertionSort() {
         for (int i = 1; i < listMhs.length; i++) {
             Mahasiswa25 temp = listMhs[i];
@@ -52,6 +60,36 @@ public class MahasiswaBerprestasi25 {
                 j--;
             }
             listMhs[j] = temp;
+        }
+    }
+
+    int sequentialSearching(double cari) {
+        int posisi = -1;
+        for (int j = 0; j < listMhs.length; j++) {
+            if (listMhs[j].ipk == cari) {
+                posisi = j;
+                break;
+            }
+        }
+        return posisi;
+    }
+
+    void tampilPosisi(double x, int pos) {
+        if (pos != -1) {
+            System.out.println("Data mahasiswa dengan IPK: " + x + " ditemukan");
+        } else {
+            System.out.println("Data " + x + " tidak ditemukan");
+        }
+    }
+
+    void tampilDataSearch(double x, int pos) {
+        if (pos != -1) {
+            System.out.println("NIM	: " + listMhs[pos].nim);
+            System.out.println("Nama	: " + listMhs[pos].nama);
+            System.out.println("Kelas	: " + listMhs[pos].kelas);
+            System.out.println("IPK	: " + x);
+        } else {
+            System.out.println("Data mahasiswa dengan IPK " + x + " tidak ditemukan");
         }
     }
 }
