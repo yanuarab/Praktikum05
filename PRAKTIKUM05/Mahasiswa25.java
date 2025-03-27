@@ -1,3 +1,4 @@
+package PRAKTIKUM05;
 import java.util.Scanner;
 public class Mahasiswa25 {
     public static void main(String[] args) {

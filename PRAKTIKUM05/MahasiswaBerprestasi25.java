@@ -1,3 +1,4 @@
+package PRAKTIKUM05;
 public class MahasiswaBerprestasi25 {
     Mahasiswa25[] listMhs;
     int idx;
